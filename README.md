@@ -12,8 +12,10 @@
 
 An app where you can enter an article of clothing - a hat, t-shirt, jacket, coat (headwear or top) - and find footwear that will match the colorway you have chosen. (Coming Soon: Along with the budget and shoesize, you will receive recommendations && pricing from four (4) of the top reseller websites, including GOAT, StockX, Stadium Goods, FlightClub. Come & find your Solemate).
 
+Once you've opened the App, you would click on either FIND YOUR SOLEMATE (in the navbar) or click an article of clothing. Once you've created the article of clothing - providing a name and an image for that piece of clothing is required - you will be able to see the name of your item and an image of the item right below it. Scroll down to where it says "FIND YOUR SOLEMATE" and enter either "Men" or "Women" into the first text field, and the color you would like to match with in the second text field (White / Black / Powder Blue / Beluga / etc). Upon submission, forty-four (44) pairs of sneakers will be generated in a short amount of time, and hopefully, you can find love <3
 
-In order to run:
+
+## In order to replicate project:
 
 **NOTE:** - You will have 3 `package.json` files in this project
 
