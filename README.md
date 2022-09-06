@@ -4,7 +4,7 @@
 
 	Heroku Deployment: https://fast-woodland-00564.herokuapp.com/
   
-  Trello Board: https://trello.com/b/leYWy6Ak/solemates
+  	Trello Board: https://trello.com/b/leYWy6Ak/solemates
   
 	Miro Wireframes: https://miro.com/app/board/uXjVPbmRoHM=/
 
