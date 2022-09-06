@@ -1,18 +1,19 @@
-# PERN Final Project Template
+# Full-Stack Portfolio Project: Solemates
 
-- select `use this template`
-- clone this repo
+	Netlify Deployment: https://zippy-panda-214a2c.netlify.app/
 
-## Getting Started
+	Heroku Deployment: https://fast-woodland-00564.herokuapp.com/
+  
+  Trello Board: https://trello.com/b/leYWy6Ak/solemates
+  
+	Miro Wireframes: https://miro.com/app/board/uXjVPbmRoHM=/
 
-### Project Structure
+# Solemates
 
-```
-├── README.md (what you are currently reading)
-├── back-end (a basic express app)
-├── front-end (a basic create-react-app)
-└── package.json (necessary boilerplate for heroku deployment )
-```
+An app where you can enter an article of clothing - a hat, t-shirt, jacket, coat (headwear or top) - and find footwear that will match the colorway you have chosen. (Coming Soon: Along with the budget and shoesize, you will receive recommendations && pricing from four (4) of the top reseller websites, including GOAT, StockX, Stadium Goods, FlightClub. Come & find your Solemate).
+
+
+In order to run:
 
 **NOTE:** - You will have 3 `package.json` files in this project
 
@@ -22,16 +23,12 @@
 
 ### `back-end` Set Up and Deployment to Heroku
 
-#### Basic App
-
 **/back-end**
 
 - `cd back-end`
 - `npm install`
-- `touch .env`
 
 make sure you are on the same level as the `package.json` of the `back-end` directory
-
 - `touch .env`
 
 ```
@@ -40,26 +37,16 @@ PG_HOST=localhost
 PG_PORT=5432
 PG_DATABASE=postgres
 PG_USER=postgres
-PG_PASSWORD=""
 ```
 
-- `npm run db:init`
-- `npm run db:seed`
-
-Test app locally. If it does not work locally, it will not work on Heroku.
-
-Fix bugs.
-
-When ready:
+When ready, make sure the terminal is on the back-end and enter commands in order:
 
 - `heroku create`
 - `git add .`
 - `git commit -m 'heroku deployment`
 - `git push heroku main` - if this does not work, go to heroku dashboard => deployment and add the remote
 
-ie `heroku git:remote -a <your-heroku-app-name>`
-
-Open your heroku app. You should see the `Hello, world!` message.
+Open your heroku app. You should see the `Find Your Solemate!` message.
 
 #### Adding the Database on Heroku
 
@@ -68,15 +55,9 @@ In the heroku dashboard, go to `Overview` choose `configure add ons`
 In the search bar `Quickly add add-ons` - search for `postgres` - choose `heroku postgres`
 
 - Choose hobby dev
-- Note: even though hobby dev is free, you may be required to provide a credit card
-- In new view, click on `heroku Postgres / attached as DATABASE` => Settings
+- Click on `heroku Postgres / attached as DATABASE` => Settings
 
 ![](./assets/heroku-database-dash.png)
-
-You will need to make these key value pairs in your heroku app
-
-**IMPORTANT**
-The `keys` must match perfectly with what is in your `db/dbConfig.js` file and your local `.env`
 
 - Open a new tab/window and go to the main page of your heroku app choose settings
 - Reveal Config Variables
@@ -100,8 +81,7 @@ Go back to the heroku database view => settings
 
 - copy `Heroku CLI` (something like `heroku pg:psql postgresql-shaped-11685 --app mysterious-spires-49488`)
 - paste into your terminal
-
-- it should open a `pg shell`
+- it should open a `pg shell` with the last word as "DATABASE=>"
 
 Run the following:
 
@@ -110,18 +90,8 @@ Run the following:
   - success should say `CREATE TABLE`
 - update the `\i ./db/prod_seed.sql` with the PG_DATABASE value from Herkou
 - `\i ./db/prod_seed.sql`
-  - success should say `INSERT 0 7`
+  - success should say `INSERT 0 6`
 - `\q`
-
-This will insert the test table with the days of the week.
-
-Later, when you have build out your app to have your schema and seed data, you will:
-
-- edit the `db/schema.sql` file to be your own
-- edit th `db/seed.sql` file to be your own
-- reopen this shell and rerun these commands.
-
-Note you should set up the
 
 ### `front-end` Set Up
 
@@ -135,21 +105,19 @@ Replace the URL given with your new heroku URL
 
 **.env**
 
+EXAMPLE:
 ```
 REACT_APP_API_URL=https://mysterious-spire-49483.herokuapp.com
 ```
 
 - `npm start`
 
-Make sure your back-end is still running. You should see an unordered list of the days of the week, coming from your back-end. If it does not work locally, it will not work when it is deployed. Keep debugging until it works
+Make sure your back-end is still running. You should see a grid containing articles of clothing, coming from your back-end. If it does not work locally, it will not work when it is deployed.
 
-Go to netlify, choose `New site from Git`
-
-- choose continuos deployment, GitHub.
-- configure the netlify app on GitHub
+Go to netlify, choose `New site from Git`, OR Add New Site -> Import an existing project -> Click on GitHub logo -> Search for the repository containing your front-end.
 
 Follow the prompts to add this project repo to Netlify
-Once, authorized, configure to launch app from
+Once, authorized, configure to launch app from:
 
 - Base directory: `front-end`
 - Build command: `npm run build`
@@ -168,4 +136,4 @@ The content of the `_redirects` file should be
 /* /index.html 200
 ```
 
-[More info](https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/#main)
+[Best Guide](https://github.com/joinpursuit/pern-final-project-template)
