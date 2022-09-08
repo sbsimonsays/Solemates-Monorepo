@@ -1,6 +1,6 @@
 const db = require("../db/dbConfig.js");
 
-// Index Route
+// Show Route (ALL-Index Route)
 const getAllApparels = async () => {
   try {
     const allApparels = await db.any("SELECT * FROM apparels");
@@ -10,7 +10,7 @@ const getAllApparels = async () => {
   }
 };
 
-// Show Route
+// Show Route (Item per ID)
 const getApparel = async (id) => {
   try {
     const oneApparel = await db.one("SELECT * FROM apparels WHERE id=$1", id);

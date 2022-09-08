@@ -1,9 +1,11 @@
 body {
-  font-family: "Haettenschweiler", bold;
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
 }
 
 h1 {
-  font-family: " Haettenschweiler";
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
 }
 
 main {
@@ -26,7 +28,8 @@ nav {
   padding-left: 4em;
   padding-right: 4em;
   font-size: x-large;
-  font-family: "Haettenschweiler", bold;
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
   color: red;
 }
 
@@ -35,8 +38,9 @@ nav a {
 }
 
 .navApparels {
-    font-size: xx-large;
-    font-family: "Haettenschweiler";
+  font-size: xx-large;
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
 }
 
 a {
@@ -58,7 +62,7 @@ h4 {
   text-align: center;
 }
 
-.Apparels article{
+.Apparels article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -77,18 +81,19 @@ article div {
 }
 
 .Apparels {
-grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr;
 }
 
 .Apparels h2 {
-  font-family: "Haettenschweiler";
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
 }
 
 .ApparelImg {
   width: 40vw;
 }
 
-.Apparels img section{
+.Apparels img section {
   object-fit: cover;
   width: 40vw;
 }
@@ -102,7 +107,8 @@ grid-template-columns: 1fr, 1fr;
 }
 
 .apparelNavi {
-  font-family: "Haettenschweiler";
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
 }
 
 .footer {
@@ -126,7 +132,8 @@ grid-template-columns: 1fr, 1fr;
   color: antiquewhite;
   justify-content: space-between;
   align-items: center;
-  font-family: "Haettenschweiler", bold;
+  font-family: "Helvetica Neue" Bold;
+  font-weight: bolder;
   align-content: center;
 }
 

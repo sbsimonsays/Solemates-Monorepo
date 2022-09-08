@@ -75,7 +75,6 @@ function NewSneakers() {
       </form>
 
       {visibility ? <Sneakers sneakers={sneakers} /> : null}
-
     </div>
   );
 }

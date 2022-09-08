@@ -89,7 +89,7 @@
 //           value={apparel.color}
 //           placeholder="Color to Match With?"
 //           onChange={handleTextChange}
-//         /> 
+//         />
 //         <br></br>
 //         <label htmlFor="image">Image URL:</label>
 //         <input

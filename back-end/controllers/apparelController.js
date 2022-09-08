@@ -28,8 +28,11 @@ apparels.get("/:id", async (req, res) => {
   if (apparel.id) {
     res.json({ payload: apparel, success: true });
   } else {
-    res
-      .status(404).json({ payload: "not found", success: false, error: "Apparel not found" });
+    res.status(404).json({
+      payload: "not found",
+      success: false,
+      error: "Apparel not found",
+    });
   }
 });
 
